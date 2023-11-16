@@ -15,4 +15,13 @@ def integral(f, a, b, n):
         area+= height * deltaX
     return area
 
-print(integral(func, 0, 1, 20))
+#finds the integral within tolerance with num rectangles and returns the num rectangles and area.
+def integralWithTol(a, b, n, t):
+    n2 = n * 3
+    area = integral(func, a, b, n)
+    areaPrime = integral(func, a, b, n2)
+    while abs(area - areaPrime) >= t:
+        n2 *= 3
+        area = areaPrime
+        areaPrime = integral(func, a, b, n2)
+    return n2, areaPrime
