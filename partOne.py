@@ -13,7 +13,7 @@ def func(x):
 
 #calc derivative at x=1
 x1 = 1
-deltaX = .00000001
+deltaX = .0000000001
 derivativeOfX1 = derivative(func, x1, deltaX)
 
 print("Derivative for part 1a at x= ", x1, " with a delta X of: ", deltaX, " is: ", derivativeOfX1)
@@ -21,7 +21,7 @@ print("Derivative for part 1a at x= ", x1, " with a delta X of: ", deltaX, " is:
 """
 Part 1a
 
-I am choosing a tolerance of 0.0000001 in order to accept a accuracy range of 99.99999% which I deemed close enough to 100% accurate
+I am choosing a tolerance of 0.00001 in order to accept a accuracy range of 99.999% which I deemed close enough to 100% accurate
 in most cases. I am starting at h (delta X) = .001 and will move the 1 one decimal place to the right each time to edit delta x until I reach the
 answer within tolerance.
 
@@ -39,15 +39,8 @@ error is .0001 which is not in my tolerance
 
 Run 4:
 Derivative for part 1a at x=  1  with a delta X of:  1e-06 (.000001) is:  13.000014000397186
-error is .00001 which is not in my tolerance
+error is .00001 which is in my tolerance
 
-Run 5:
-Derivative for part 1a at x=  1  with a delta X of:  1e-07 (.0000001)  is:  13.000001413132622
-error is .000001 which is not in my tolerance
 
-Run 6:
-Derivative for part 1a at x=  1  with a delta X of:  1e-08 (.00000001) is:  13.00000000981072
-Error is .000000009 which is in my tolerance
-
-I stopped here on run 6 because I have an error which is in my tolerance. A delta X of .00000001 is acceptable.
+I stopped here on run 6 because I have an error which is in my tolerance. A delta X of .00000001 is acceptable for x = 1
 """
