@@ -21,7 +21,14 @@ def integralWithTol(a, b, n, t):
     area = integral(func, a, b, n)
     areaPrime = integral(func, a, b, n2)
     while abs(area - areaPrime) >= t:
-        n2 *= 3
+        n2 *= 2
         area = areaPrime
         areaPrime = integral(func, a, b, n2)
     return n2, areaPrime
+
+a = 2
+b = 4
+numRect = 10
+tol = 0.00001
+n, area = integralWithTol(a, b, numRect, tol)
+print("Area: ", area, " Number of rectangles: ", n)
