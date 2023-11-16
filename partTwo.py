@@ -33,3 +33,15 @@ numRect = 10
 tol = 0.00001
 n, areaFinal = integralWithTol(a, b, numRect, tol)
 print("Area: ", areaFinal, " Number of rectangles: ", n)
+"""
+Part 2
+
+I chose a tolerance of 0.00001 which is the same tolerance I used in part 1. I started with 10 rectangles
+because I thought it was the best starting place for incrimenting the number of rectangles by 2 each loop
+of the program.
+
+Run 1:
+With a tolerance of 0.00001 I got the answers for area and number of rectangles as
+Area:  27.28665900675092  Number of rectangles:  1310720
+My code automatically gives an answer that is within the tolerance because of how we find the number of rectangles as shown in class.
+"""
