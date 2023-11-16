@@ -14,7 +14,7 @@ def func(x):
 #calc derivative at x=1
 x1 = 1
 deltaX = .001
-derivativeOfX1 = derivative(func, x1, .000001)
+derivativeOfX1 = derivative(func, x1, deltaX)
 
 print("Derivative for part 1a at x= ", x1, " with a delta X of: ", deltaX, " is: ", derivativeOfX1)
 
